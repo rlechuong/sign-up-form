@@ -116,38 +116,86 @@ a {
 }
 
 #east-side {
-    width: 65vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    width: 65vw;
     background-color: #f9fafb;
+    gap: 2rem;
+}
+
+#form-intro-text {
+    font-size: 1rem;
+    max-width: 65ch;
+    padding-left: 2rem;
+    font-weight: bold;
 }
 
 form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     background-color: #ffffff;
-    box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
-    padding: 2em;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 20%);
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    gap: 1rem;
+}
+
+#form-text {
+    font-size: 1rem;
+    max-width: 65ch;
+    font-weight: bold;
+}
+
+.form-row {
+    display: flex;
     gap: 5rem;
 }
 
 label {
     display: block;
+    font-size: 0.75rem;
+    font-weight: bold;
 }
 
 input {
-    width: 300px;
+    width: 16rem;
+    border: 0.1rem solid #E5E7EB;
+    border-radius: 4px;
 }
 
-#form-first-column input:nth-child(2),
-#form-first-column input:nth-child(4) {
-    margin-bottom: 2rem;
+input:focus {
+    outline: 0.1rem solid blue;
+    box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 20%);
 }
 
-#form-second-column input:nth-child(2),
-#form-second-column input:nth-child(4) {
-    margin-bottom: 2rem;
+input:invalid {
+    outline: 0.1rem solid red;
 }
+
+#form-submission-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding-left: 2em;
+}
+
+#create-button {
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 15rem;
+    background-color: #596D48;
+    color: white;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+#account-text a:link,
+#account-text a:visited {
+    color: #596D48;
+    font-weight: bold;
+    text-decoration: none;
+}
+
